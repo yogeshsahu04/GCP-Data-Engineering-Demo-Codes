@@ -5,7 +5,8 @@ This Airflow DAG code to demo - Demo HTTP operators
 1. Extract data from HTTP API 
 2. Pull data from Xcom 
 3. Write data into GCS bucket in JSON format
-#secret variable - http_conn_id_demo = https://www.alphavantage.co
+#add this  in airflow- connection-id= http_conn_id_demo 
+#hostname= https://www.alphavantage.co -- connection type will be http
 # source data API - 'https://www.alphavantage.co/query?function=TOURNAMENT_PORTFOLIO&season=2021-09&apikey=demo'
 """
 from __future__ import annotations
